@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Terminal, Network, Calculator, ChevronRight, Activity, Code2 } from "lucide-react";
+import { Terminal, Network, Calculator, ChevronRight, Activity, Code2, Sigma } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 // Particle background for the "geek/high-tech" vibe
@@ -222,10 +222,10 @@ export default function App() {
             delay={0.6}
           />
           <ModuleCard 
-            title="GRAPH"
-            desc="Real-time data visualization engine and visual node mapping."
-            icon={<Network size={26} strokeWidth={1.5} />}
-            url="//graph.toolx.cc.cd"
+            title="LOCUS"
+            desc="Statistical analysis engine computing mean, median, variance, and distribution metrics."
+            icon={<Sigma size={26} strokeWidth={1.5} />}
+            url="//locus.toolx.cc.cd"
             accent="purple"
             delay={0.8}
           />
