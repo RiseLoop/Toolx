@@ -1,0 +1,6 @@
+{
+  "name": "TOOLX Landing Page",
+  "description": "A high-tech, geek-style landing page for TOOLX with cool animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
