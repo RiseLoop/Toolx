@@ -4,7 +4,7 @@
  */
 
 import { motion } from "motion/react";
-import { Terminal, Network, Calculator, ChevronRight, Activity, Code2, Sigma } from "lucide-react";
+import { Terminal, Network, Calculator, ChevronRight, Activity, Code2, Sigma, Mail } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 // Particle background for the "geek/high-tech" vibe
@@ -238,6 +238,29 @@ export default function App() {
             delay={1.0}
           />
         </div>
+
+        {/* Support & Contact Channels */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+          className="mt-16 w-full max-w-xl flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-xs font-mono"
+        >
+          <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-zinc-950/60 border border-zinc-800/80 hover:border-cyan-500/40 transition-colors duration-300 group">
+            <Mail size={14} className="text-cyan-500 group-hover:scale-110 transition-transform duration-200" />
+            <span className="text-zinc-500">联系我们:</span>
+            <a href="mailto:contact@toolx.cc.cd" className="text-zinc-300 hover:text-cyan-400 transition-colors duration-200">
+              contact@toolx.cc.cd
+            </a>
+          </div>
+          <div className="flex items-center gap-2.5 px-4 py-2.5 rounded-lg bg-zinc-950/60 border border-zinc-800/80 hover:border-emerald-500/40 transition-colors duration-300 group">
+            <Mail size={14} className="text-emerald-500 group-hover:scale-110 transition-transform duration-200" />
+            <span className="text-zinc-500">问题反馈:</span>
+            <a href="mailto:service@toolx.cc.cd" className="text-zinc-300 hover:text-emerald-400 transition-colors duration-200">
+              service@toolx.cc.cd
+            </a>
+          </div>
+        </motion.div>
       </main>
 
       {/* Footer Info */}
